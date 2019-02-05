@@ -1,6 +1,6 @@
 /***********************************************************
 Component: DragAndDrop Feature
-Develope by : Avinash (Devtrust.io)
+Developed by : Avinash (Devtrust.io)
 Developed on : 29th Jan 2019
 Modified on :
 ************************************************************/
