@@ -198,7 +198,6 @@ class ModifierController extends Controller
                             }
 
                             $modifierCheck = Modifier::where('resort_id', '=', $request->resort_id)
-                                    //->where("group_name", "=", $request->name)
                                     ->where("name", "=", $inputData['name'])
                                     ->first();
                             if (!isset($modifierCheck->id) || empty($modifierCheck->id)) {
@@ -217,7 +216,6 @@ class ModifierController extends Controller
                         }
 
                         $modifierCheck = Modifier::where('resort_id', '=', $request->resort_id)
-                                //->where("group_name", "=", $request->name)
                                 ->where("name", "=", $inputData['name'])
                                 ->first();
                         if (!isset($modifierCheck->id) || empty($modifierCheck->id)) {
@@ -288,7 +286,6 @@ class ModifierController extends Controller
                 $id = $dataArr['resort_id'];
                 $data = Modifier::select(DB::raw('CONCAT( name, " [",price,"]") as label'),'id as value')
                         ->where("resort_id", $id)->get();
-                //$data = Modifier::select(DB::raw('CONCAT( name, " [",price,"]") as label', 'id as value'))->where("resort_id", $id)->get();
                 return response()->json(['success' => true, 'modifierListData' => $data], $this->successStatus);
             }
         } catch (Exception $ex) {
