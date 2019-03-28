@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2018 Devtrust. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Dev_Autoregister::setup" title="Devtrust" module="devtrust_Autoregister" sortOrder="20" action="autoregister/registerguestcustomer/index" resource="Dev_Autoregister::dev_registerguestcustomerindex"/>
+        <add id="Dev_Autoregister::main" title="Auto Register" module="devtrust_Autoregister" sortOrder="10" action="adminhtml/system_config/edit/section/devtrust_autoregister" resource="Dev_Autoregister::RegisterGuestCustomer" parent="Dev_Autoregister::setup"/>
+    </menu>
+</config>
+

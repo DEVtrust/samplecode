@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+    	<tab id="devtrust" translate="label" sortOrder="200">
+            <label>Devtrust</label>
+        </tab>
+        <section id="devtrust_autoregister"  showInDefault="1">
+            <tab>devtrust</tab>
+            <label>Auto Register</label>
+            <resource>Magento_Config::config</resource>
+            <group id="general"  showInDefault="1">
+                <label>General Settings</label>               
+                <field id="status" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

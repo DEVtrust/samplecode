@@ -1,0 +1,22 @@
+<!--@subject Welcome to Main Website Store @-->
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>
+        <td><b>{{trans "Name:"}}</b></td>
+        <td>{{var data.name}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Email:"}}</b></td>
+        <td>{{var data.email}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Password:"}}</b></td>
+        <td>{{var data.pass}}</td>
+    </tr>
+
+</table>
+
+
+
+{{template config_path="design/email/footer_template"}}
